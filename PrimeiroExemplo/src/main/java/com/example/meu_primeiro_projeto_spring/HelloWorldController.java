@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 public class HelloWorldController {
 
     @GetMapping("/") //rota com query selection
-    public String greetTheWorld(@RequestParam String name) {
+    public String greetTheWorld(@RequestParam(defaultValue = "World") String name) {
         return "Hello, %s".formatted(name);
     }
 
