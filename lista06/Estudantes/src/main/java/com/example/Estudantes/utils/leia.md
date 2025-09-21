@@ -1,1 +1,0 @@
-https://gitlab.com/professor-rvenson/backend-2025-2/-/blob/main/exercicios/lista006.md?ref_type=heads
