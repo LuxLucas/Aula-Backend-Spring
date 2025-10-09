@@ -1,16 +1,12 @@
 package com.backend.FIPETable.models;
 
 import jakarta.validation.constraints.Min;
-import lombok.AllArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
-@AllArgsConstructor
-public class Car extends Veicle {
+@SuperBuilder
+public class Car extends Vehicle {
     
     @Min(value = 1985)
-    protected Short year;
-
-    public Car(){
-        super(mark, model, price, year, fipeCode, fuel, acronymFuel, referenceMonth);
-    }
+    protected Integer year;
 
 }

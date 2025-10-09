@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import com.example.h2_project.models.SoccerPlayer;
 import com.example.h2_project.services.SoccerPlayerService;
+import com.example.h2_project.dtos.SoccerPlayerResponseDTO;
 
 @RestController
 @RequestMapping("/soccer-players")
@@ -26,7 +27,7 @@ public class SoccerPlayerControler {
     }
 
     @GetMapping
-    public List<SoccerPlayer> getAllSoccerPlayers(){
+    public List<SoccerPlayerDTO> getAllSoccerPlayers(){
         return soccerPlayerService.getAllSoccerPlayers();
     }
 
